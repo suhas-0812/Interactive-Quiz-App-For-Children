@@ -154,7 +154,7 @@ def play():
     scores=[]
     total_score=0
     
-    selected_questions = random.sample(Questions, 3)
+    selected_questions = random.sample(Questions, 10)
     
     
     placeholder = st.empty()
@@ -192,7 +192,7 @@ def play():
         response_placeholder.empty()
         time.sleep(1)
     
-    st.subheader(name+", Your score is {}/3".format(str(total_score)))
+    st.subheader(name+", Your score is {}/10".format(str(total_score)))
     col1,col2=st.columns(2)
     with col1:
         for item in scores[:5]:
