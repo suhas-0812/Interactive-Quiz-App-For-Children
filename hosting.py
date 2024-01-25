@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_webrtc
 import cv2
 import mediapipe as mp
 import time
